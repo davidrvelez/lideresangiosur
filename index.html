@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Líderes a futuro - Herramientas para la productividad empresarial IA</title>
+    <title>Líderes a Futuro - Herramientas para la productividad empresarial IA</title>
     <!-- Carga de Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Configuración para usar la fuente Inter y personalizar colores -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght=100..900&display=swap');
         body {
             font-family: 'Inter', sans-serif;
             background-color: #f7f9fc;
@@ -26,19 +26,27 @@
     </style>
 </head>
 <body class="min-h-screen">
+
+    <!-- Notificación Toast para Copiado Exitoso -->
+    <div id="toast" class="fixed bottom-5 right-5 bg-teal-600 text-white px-6 py-3 rounded-xl shadow-2xl z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none flex items-center space-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+        </svg>
+        <span class="font-medium">¡Texto copiado para el ejercicio final!</span>
+    </div>
+
     <!-- Contenedor Principal -->
     <div class="max-w-6xl mx-auto p-4 sm:p-6 lg:p-8">
 
-        <!-- Contenedor del Logo (Centrado y Aumentado de Tamaño) -->
+        <!-- Contenedor del Logo de la Clínica Angiosur (Actualizado) -->
         <div class="text-center mb-8 pt-4">
             <img src="https://angiosur.com/wp-content/uploads/2022/04/NUEVO-LOGO-SIN-FONDO-02-1.png" 
-                 alt="Logo Angiosur" 
-                 class="h-16 sm:h-20 mx-auto bg-white p-2 rounded-xl shadow-lg transition duration-300 hover:shadow-xl">
+                 alt="Logotipo Clínica Angiosur" 
+                 class="h-16 sm:h-20 mx-auto transition duration-300 hover:scale-105">
         </div>
 
-        <!-- Banner de Título y Tema -->
+        <!-- Banner de Título y Tema (Actualizado) -->
         <header class="gradient-bg text-white p-6 sm:p-10 rounded-xl shadow-2xl mb-8">
-            
             <h1 class="text-xl sm:text-2xl font-semibold opacity-80 mb-2 tracking-wide">
                 Líderes a futuro
             </h1>
@@ -54,20 +62,22 @@
         <main class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
 
             <!-- Tarjeta del Docente -->
-            <div class="lg:col-span-1 bg-white p-6 rounded-xl shadow-lg border-t-4 border-cyan-500">
-                <h3 class="text-2xl font-bold text-gray-800 mb-4">Docente del Curso</h3>
-                <div class="flex items-center space-x-4">
-                    <!-- Imagen de perfil del Docente (Actualizada) -->
-                    <img src="https://media.licdn.com/dms/image/v2/D4E03AQHbi1F_w8-W7A/profile-displayphoto-scale_200_200/B4EZ4EoaUtJMAY-/0/1778194164033?e=1783555200&v=beta&t=5XIc8pZ7tkWiA2_Q1Kjax0RK6oC9sYXt-o3SJyEMqfQ" 
-                         alt="Foto de David Ricardo Vélez Vargas" 
-                         class="h-12 w-12 rounded-full object-cover shadow-md border-2 border-cyan-500">
-                    <div>
-                        <p class="text-xl font-semibold text-gray-900">David Ricardo Vélez Vargas</p>
-                        <p class="text-sm text-gray-500">Experto en gestión en salud y tecnologías</p>
+            <div class="lg:col-span-1 bg-white p-6 rounded-xl shadow-lg border-t-4 border-cyan-500 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Docente del Curso</h3>
+                    <div class="flex items-center space-x-4 mb-4">
+                        <!-- Imagen de perfil del Docente (Actualizada) -->
+                        <img src="https://media.licdn.com/dms/image/v2/D4E03AQHbi1F_w8-W7A/profile-displayphoto-scale_200_200/B4EZ4EoaUtJMAY-/0/1778194164033?e=1783555200&v=beta&t=5XIc8pZ7tkWiA2_Q1Kjax0RK6oC9sYXt-o3SJyEMqfQ" 
+                             alt="Foto de David Ricardo Vélez Vargas" 
+                             class="h-14 w-14 rounded-full object-cover shadow-md border-2 border-cyan-500">
+                        <div>
+                            <p class="text-xl font-semibold text-gray-900">David Ricardo Vélez Vargas</p>
+                            <p class="text-sm text-gray-500">Experto en gestión en salud y tecnologías</p>
+                        </div>
                     </div>
                 </div>
                 <!-- Acceso a LinkedIn -->
-                <a href="https://www.linkedin.com/in/drvelezv/" target="_blank" class="link-button mt-4 inline-flex items-center justify-center w-full px-4 py-2 bg-blue-700 text-white font-medium text-sm rounded-lg shadow-md hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                <a href="https://www.linkedin.com/in/drvelezv/" target="_blank" class="link-button inline-flex items-center justify-center w-full px-4 py-2 bg-blue-700 text-white font-medium text-sm rounded-lg shadow-md hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
                     <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.3 3.6c.4 0 .7.3.7.7v11.4c0 .4-.3.7-.7.7H3.7c-.4 0-.7-.3-.7-.7V4.3c0-.4.3-.7.7-.7h12.6zm-1.8 11.2h-2.1v-3.3c0-.8-.3-1.4-1.1-1.4-.7 0-1.1.5-1.1 1.4v3.3H7.8v-6.9h2.1v.9c.3-.5.9-.8 1.6-.8 1.7 0 2.2 1.1 2.2 2.9v3.9h.1zM5.5 8c-.6 0-1.1-.4-1.1-1s.5-1 1.1-1c.6 0 1.1.4 1.1 1s-.5 1-1.1 1zm-1.1 6.8h2.1v-6.9H4.4v6.9z" clip-rule="evenodd"></svg>
                     Ver Perfil de LinkedIn
                 </a>
@@ -77,7 +87,7 @@
             <div class="lg:col-span-2 bg-white p-6 rounded-xl shadow-lg border-t-4 border-teal-500">
                 <h3 class="text-2xl font-bold text-gray-800 mb-4">Material del Curso y Presentaciones</h3>
                 <div class="space-y-4">
-                    <!-- Presentación 1 (Marco Ético y Gobernanza - URL DAG4NTwkyeo) -->
+                    <!-- Presentación 1 (Actualizada) -->
                     <a href="https://canva.link/y6je6cxtvfgqx5j" target="_blank" class="link-button flex items-center p-4 bg-teal-50 rounded-lg shadow-sm hover:bg-teal-100 transition duration-150">
                         <!-- Icono de Presentación -->
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-600 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -86,7 +96,7 @@
                         <span class="text-gray-700 font-medium truncate">Presentación 1: Introducción</span>
                     </a>
                     
-                    <!-- Presentación 2 (La IA como Imperativo Estratégico - URL DAG4NbiltE8) -->
+                    <!-- Presentación 2 (Actualizada) -->
                     <a href="https://canva.link/6e2tgd4zo66qmgj" target="_blank" class="link-button flex items-center p-4 bg-teal-50 rounded-lg shadow-sm hover:bg-teal-100 transition duration-150">
                         <!-- Icono de Presentación -->
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-600 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -97,6 +107,48 @@
                 </div>
             </div>
         </main>
+
+        <!-- Tarjeta de Ejercicio Práctico Final y Premiación (Alineada y No Interactiva) -->
+        <section class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-amber-500 mb-8 overflow-hidden">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+                <!-- Columna 1: Imagen del Comité de Seguridad del Paciente (Estática y Ajustada) -->
+                <div class="w-full flex">
+                    <img src="https://angiosur.com/wp-content/uploads/2025/03/angry-young-woman-rubbing-temples-scaled.webp" 
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x400/1c3d5a/ffffff?text=Comit%C3%A9+de+Seguridad'"
+                         alt="Comité de Seguridad del Paciente en Angiosur" 
+                         class="w-full h-64 md:h-full min-h-[250px] md:min-h-[320px] object-cover rounded-lg shadow-md border border-gray-100">
+                </div>
+
+                <!-- Columna 2: Explicación y Botón para Copiar Prompt (Equilibrada en altura) -->
+                <div class="flex flex-col justify-between h-full space-y-4 py-1">
+                    <div>
+                        <span class="px-3 py-1 text-xs font-semibold tracking-wider text-amber-800 bg-amber-100 rounded-full uppercase">
+                            Ejercicio Final y Premiación
+                        </span>
+                        <h3 class="text-2xl font-bold text-gray-800 mt-3 mb-3">Taller de IA Generativa en Acción</h3>
+                        <p class="text-sm text-gray-600 mb-4 leading-relaxed">
+                            Utilizaremos los apuntes informales de un <strong>Comité de Seguridad del Paciente</strong> para poner a prueba tus destrezas con la IA. Haz clic en el recuadro de abajo para copiar las notas sin alterar y utilizarlas en tu prompt.
+                        </p>
+                    </div>
+
+                    <!-- Botón Interactivo que contiene el texto del ejercicio de manera verbatim -->
+                    <button onclick="copiarTextoEjercicio()" 
+                            class="link-button group w-full text-left p-4 bg-amber-50 border border-amber-200 hover:border-amber-400 hover:bg-amber-100/50 rounded-xl transition duration-150 relative">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-bold text-amber-800 uppercase tracking-wider">Texto del ejercicio (Haz clic para copiar)</span>
+                            <span class="text-amber-600 group-hover:scale-110 transition duration-150">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+                                </svg>
+                            </span>
+                        </div>
+                        <p id="texto-ejercicio" class="text-xs text-gray-700 italic line-clamp-5 leading-relaxed font-mono">
+                            Comité de seguridad del paciente, martes. Asistieron coordinación de enfermería, hemodinamia, calidad y el de mantenimiento llegó tarde. Se habló de que en marzo hubo 3 eventos relacionados con demora en el reporte de cateterismos, uno fue cuasi-evento. La oportunidad de agendamiento subió a 9 días, la meta es 5. Enfermería dice que falta personal en las tardes. Calidad pidió revisar el indicador antes del 30. Quedó pendiente comprar 2 bombas de infusión, mantenimiento dijo que ya estaban pedidas desde enero pero no han llegado. Se decidió hacer reentrenamiento en el protocolo de reporte. Alguien propuso reunión con la EPS por las autorizaciones. La satisfacción del usuario está en 87%.
+                        </p>
+                    </button>
+                </div>
+            </div>
+        </section>
 
         <!-- Sección de Contenido del Curso (Informe Estratégico) -->
         <section class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-gray-300">
@@ -112,10 +164,9 @@
                 
                 <h4 class="text-xl font-semibold mb-2 text-cyan-700">Informe Estratégico: Adopción de Inteligencia Artificial en la Gestión Administrativa del Sector Salud</h4>
                 
-                <!-- El contenido se incluye como texto simple para mantener el formato original sin interpretar Markdown en el HTML -->
                 <p class="mb-3 text-sm leading-relaxed">
-                    <strong>1. Introducción: La IA como Imperativo Estratégico para la Gestión en Salud</strong>
-                    La adopción de la Inteligencia Artificial (IA) ha trascendido la innovación tecnológica para convertirse en un imperativo estratégico ineludible para la modernización y sostenibilidad de la gestión sanitaria. El propósito de este informe es proporcionar a los líderes y tomadores de decisiones un análisis claro y estructurado sobre las aplicaciones prácticas, las ventajas competitivas, los riesgos inherentes y el marco ético indispensable para una adopción exitosa y responsable de estas tecnologías. Lejos de ser una simple herramienta de automatización, la IA se perfila como una aliada estratégica capaz de potenciar la eficiencia operativa, mejorar la toma de decisiones basada en evidencia y liberar el potencial humano para concentrarse en tareas de mayor valor. Para navegar este nuevo paradigma, es crucial comprender primero los conceptos que sustentan esta revolución.
+                    <strong>1. Introducción: La IA como Imperativo Estratégico para la Gestión Sanitaria</strong>
+                    La adopción de la Inteligencia Artificial (IA) ha trascendido la innovación tecnológica para convertirse en un imperativo estratégico ineludible para la modernización y sostenibilidad de la gestión sanitaria. El propósito de este informe es proporcionar a los líderes y tomadores de decisiones un análisis claro y structured sobre las aplicaciones prácticas, las ventajas competitivas, los riesgos inherentes y el marco ético indispensable para una adopción exitosa y responsable de estas tecnologías. Lejos de ser una simple herramienta de automatización, la IA se perfila como una aliada estratégica capaz de potenciar la eficiencia operativa, mejorar la toma de decisiones basada en evidencia y liberar el potencial humano para concentrarse en tareas de mayor valor. Para navegar este nuevo paradigma, es crucial comprender primero los conceptos que sustentan esta revolución.
                 </p>
                 
                 <p class="mb-3 text-sm leading-relaxed">
@@ -128,7 +179,7 @@
                 </p>
                 
                 <p class="mb-3 text-sm leading-relaxed">
-                    <strong>3. Aplicaciones Estratégicas de la IA en la Administración en salud</strong>
+                    <strong>3. Aplicaciones Estratégicas de la IA en la Administración Sanitaria</strong>
                     Esta sección constituye el núcleo del informe, detallando cómo los fundamentos de la IA se traducen en valor tangible para las instituciones de salud. Las aplicaciones analizadas demuestran el potencial de estas tecnologías para transformar radicalmente la eficiencia y la inteligencia organizacional en tres dominios clave: la optimización de procesos, el soporte a la toma de decisiones y el incremento de la productividad.
                     
                     <strong>3.1 Optimización y Automatización de Procesos Administrativos</strong>
@@ -144,7 +195,7 @@
                 <p class="mb-3 text-sm leading-relaxed">
                     <strong>4. Evaluación de Ventajas Estratégicas y Riesgos Inherentes</strong>
                     
-                    <strong>4.1 Ventajas Competitivas y Operacionales:</strong> Agilidad y Eficiencia, Reducción de Errores, y Soporte en Decisiones Estratégicas.
+                    <strong>4.1 Ventajas Competitivas and Operacionales:</strong> Agilidad y Eficiencia, Reducción de Errores, y Soporte en Decisiones Estratégicas.
                     
                     <strong>4.2 Riesgos y Desafíos Críticos para la Gestión:</strong> Sesgos Algorítmicos, Pérdida de Criterio Humano y Dependencia Tecnológica, Privacidad y Protección de Datos Sensibles, y Errores de Interpretación.
                 </p>
@@ -155,19 +206,68 @@
                 </p>
                 
                 <p class="mb-3 text-sm leading-relaxed">
-                    <strong>6. Proyección Futura: Hacia un Liderazgo Digital en la Gestión en Salud</strong>
+                    <strong>6. Proyección Futura: Hacia un Liderazgo Digital en la Gestión Sanitaria</strong>
                     Las tendencias clave incluyen: La automatización integral de flujos de trabajo, El uso generalizado de la analítica predictiva, y Avances en la interoperabilidad de sistemas.
                 </p>
                 
-               
+                <p class="mb-3 text-sm leading-relaxed">
+                    <strong>7. Referencias</strong>
+                    Organización Mundial de la Salud (2023), Banco Interamericano de Desarrollo (2024), IEEE (2023), OCDE (2022), Harvard Business Review (2024).
+                </p>
+
             </div>
         </section>
 
         <!-- Pie de página (Footer) -->
         <footer class="mt-8 text-center text-gray-500 text-sm">
-            <p>&copy; 2026 Líderes a futuro Angiosur. Todos los derechos reservados.</p>
+            <p>&copy; 2026 Líderes a Futuro - Herramientas para la productividad empresarial IA | Clínica Angiosur. Todos los derechos reservados.</p>
         </footer>
 
     </div>
+
+    <!-- Lógica de Interactividad y Copiado Segura -->
+    <script>
+        function copiarTextoEjercicio() {
+            // El texto exacto suministrado por el usuario sin ninguna modificación
+            const textoAEscribir = "Comité de seguridad del paciente, martes. Asistieron coordinación de enfermería, hemodinamia, calidad y el de mantenimiento llegó tarde. Se habló de que en marzo hubo 3 eventos relacionados con demora en el reporte de cateterismos, uno fue cuasi-evento. La oportunidad de agendamiento subió a 9 días, la meta es 5. Enfermería dice que falta personal en las tardes. Calidad pidió revisar el indicador antes del 30. Quedó pendiente comprar 2 bombas de infusión, mantenimiento dijo que ya estaban pedidas desde enero pero no han llegado. Se decidió hacer reentrenamiento en el protocolo de reporte. Alguien propuso reunión con la EPS por las autorizaciones. La satisfacción del usuario está en 87%.";
+
+            // Creación de un elemento de texto temporal para asegurar compatibilidad en múltiples entornos (iframe/sandboxed)
+            const elTemporal = document.createElement('textarea');
+            elTemporal.value = textoAEscribir;
+            elTemporal.setAttribute('readonly', '');
+            elTemporal.style.position = 'absolute';
+            elTemporal.style.left = '-9999px';
+            document.body.appendChild(elTemporal);
+            
+            elTemporal.select();
+            elTemporal.setSelectionRange(0, 99999); // Para compatibilidad en dispositivos móviles
+
+            try {
+                // Comando de copiado tradicional para entornos sandbox
+                const copiadoExitoso = document.execCommand('copy');
+                if (copiadoExitoso) {
+                    mostrarNotificacion();
+                }
+            } catch (err) {
+                console.warn('Fallo en la copia tradicional, intentando API moderna', err);
+                if (navigator.clipboard) {
+                    navigator.clipboard.writeText(textoAEscribir).then(mostrarNotificacion);
+                }
+            }
+
+            document.body.removeChild(elTemporal);
+        }
+
+        function mostrarNotificacion() {
+            const toast = document.getElementById('toast');
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+            
+            setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 3000);
+        }
+    </script>
 </body>
 </html>
